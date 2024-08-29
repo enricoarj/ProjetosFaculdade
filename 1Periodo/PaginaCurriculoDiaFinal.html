@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Currículo</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/experiencias-1.css">
+        <script src="./javascript/myscript.js"> </script>
+    </head>
+
+    <body>
+        <div class="header">
+          <h1>Meu Currículo</h1>
+          <p>Página inicial</p>
+        </div>
+        
+        <div class="topnav">
+          <button type="button" onclick="mostrarDados()">Dados Pessoais</button>
+          <button type="button" onclick="mostrarExp()">Experiencias</button>
+          <button type="button" onclick="mostrarForm()">Formação</button>
+        </div>
+        
+        <div class="row">
+          <div class="column side">
+            <h2>Dados Pessoais</h2>
+            <label id="Nome">Nome Completo</label>
+            <input type="text" required><br>
+            <label id="email">e-mail</label>
+            <input type="email" required><br>
+            <label id="Telefone">Telefone</label>
+            <input type="tel" required><br><br>
+            <input type="reset" value="Limpar" id="Limpar">
+            <input type="submit" value="Voltar" id="Voltar">
+          </div>
+          
+          <div class="column side">
+            <h2>Experiencias</h2>
+            <form>
+              <label id="Entidade">Entidade</label>
+              <input type="text" required><br>
+              <label id="Atividade">Atividade</label>
+              <input type="text" required><br>
+              <label id="Data">Data</label>
+              <input type="date" required><br><br>
+              <input type="reset" value="Limpar" id="Limpar">
+              <input type="submit" value="Voltar" id="Voltar">
+          </form>
+          </div>
+          
+          <div class="column side">
+            <h2>Formação</h1>
+            <form>
+              <label id="Instituicao">Instituição</label>
+              <input type="text" required><br>
+              <label id="Curso">Curso</label>
+              <input type="text" required><br>
+              <label id="Periodo">Período</label>
+              <input type="date" required> até <input type="date" required><br><br>
+              <input type="reset" value="Limpar" id="Limpar">
+              <input type="submit" value="Voltar" id="Voltar">
+           </form>
+          </div>
+        </div>
+        
+        <div class="footer">
+          <button type="button" onclick="window.print()">Imprimir</button>
+        </div>
+          
+        </body>
+        </html>
