@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1710166650 source:c:\users\1485454\documents\mod 3d 2024\20240219\projeto2\projetoopengl\main.cpp
+	<stdio.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1426360528 c:\users\1485454\downloads\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1426360528 c:\users\1485454\downloads\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1710169352 source:c:\users\1485454\documents\mod 3d 2024\20240219\projeto3\projetonome\main.cpp
+	<stdio.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<iostream>
+	<stdlib.h>
+
+1711388814 source:c:\users\enric\onedrive\documentos\faculdade\2º período\mod 3d\projetos\projeto3\projetonome\main.cpp
+	<stdio.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<iostream>
+	<stdlib.h>
+
+1716835280 source:c:\users\enric\onedrive\documentos\faculdade\2º período\mod 3d\tarefas\lab\trabalho 2\main.cpp
+	<GLUT/freeglut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+
