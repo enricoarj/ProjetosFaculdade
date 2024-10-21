@@ -23,16 +23,39 @@
 
     <?php 
        $books = [
-        "Bram Stoker's Dracula",
-        "Carmilla, Karnstein's Vampire",
-        "Edgar Allan Poe",
-        "H.P. Lovecraft"
+        [
+            'name' => 'Dracula',
+            'author' => "Bram Stoker",
+            'purchase_url' => "https://example.com"
+        ],
+        [
+            'name' => "Carmilla, Karnstein's Vampire",
+            'author' => "Sheridan Le Fanu",
+            'purchase_url' => "https://example.com"
+        ],    
+        [
+            'name' => "The Fall Of The House of Usher",
+            'author' =>"Edgar Allan Poe",
+            'purchase_url' => "https://example.com"
+
+        ],
+        [
+            'name' => "Call of Cthulhu",
+            'author' => "H.P. Lovecraft",
+            'purchase_url' => "https://example.com"
+
+        ]
+
        ];
     ?>
     <ul>
         <?php 
             foreach($books as $book) : ?>
-                <li><?= $book ?></li>
+                <li>
+                    <a href ="<?= $book['purchase_url'] ?>">
+                        <?= $book['name'] ?>
+                    </a>
+                </li>
             <?php endforeach; ?>
     </ul>
 
