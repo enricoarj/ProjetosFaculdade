@@ -49,23 +49,29 @@
         ]
 
        ];
-    
-    function filter_by_author($books, $author){
-        $author = gets.chomp
-        $filtered_books = [];
-        foreach ($books as $book){
-            if ($book['author'] === $author ){
-                $filtered_books[] = $book;
+/*
+    function filter($items, $fn){
+
+        $filtered_items = [];
+
+        foreach ($items as $item){
+            if ($fn($item)){
+                $filtered_items[] = $item;
             }
         }
-        return $filtered_books;
+        return $filtered_items;
     }
+*/
+
+    $filtered_books = array_filter($books, function($book){
+        return $book['release_date'] < 1900;
+    });
 
     ?>
 
     <ul>
         <?php 
-            foreach(filter_by_author($books, $author) as $book) : ?>
+            foreach($filtered_books as $book) : ?>
                     <li>
                         <a href ="<?= $book['purchase_url'] ?>">
                             <?= $book['name'] ?> (<?= $book['release_date']?>)
