@@ -1,0 +1,2 @@
+puts pula linha
+p não aceita vazio
