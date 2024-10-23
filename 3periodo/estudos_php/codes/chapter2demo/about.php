@@ -1,5 +1,0 @@
-<?php
-    require 'functions.php';    
-
-    $heading = 'About Us';
-require "views/contact.view.php";
