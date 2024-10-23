@@ -1,7 +1,10 @@
 <?php
 
-    require 'functions.php';    
+require 'functions.php';
+require 'router.php';
+require 'Database.php';
 
-    $heading = 'Home';
+$db = new Database();
+$posts = $db->query("select * from posts")->fetchAll(PDO::FETCH_ASSOC);
 
-require "views/index.view.php";
+dumpNdie($posts);
