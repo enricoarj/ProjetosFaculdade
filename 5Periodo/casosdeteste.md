@@ -1,20 +1,25 @@
-ID,Teste,Objetivo,Entradas,Passos Executados,Resultado Esperado,Resultado Obtido,Evidência,Status
-CT 01,Login Válido,Realizar Login com dados válidos,claudio.batista@hotmail.comBatata@1,"Acesso ao Site, inserção dos dados nos campos correspondentes, clicar em ""Entrar""","Login efetuado com sucesso, acesso à página inicial",Página Inicial Acessada,,Aprovado ✅
-CT 02,Login Inválido,Realizar Login com dados inválidos,teste.invalido@teste.comtesteinv,"Acesso ao Site, inserção dos dados nos campos correspondentes, clicar em ""Entrar""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 03,Login Inválido,Realizar Login sem inserir dado algum,,"Acesso ao Site, clicar em ""Entrar""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 04,Criar Conta Válida,Realizar o cadastro com dados válidos,Enricoenrico.araujo@sga.pucminas.brteste04,"Acesso ao Site, clicar em ""Faça seu Cadastro"", inserir dados válidos e clicar em ""Criar Conta""",Acesso a página inicial,Página Inicial Acessada,,Aprovado ✅
-CT 05,Criar Conta Inválida,Realizar o cadastro com dados inválidos,Teste 04teste04teste 04,"Acesso ao Site, clicar em ""Faça seu Cadastro"", inserir dados já cadastrados e clicar em ""Criar Conta""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 06,Criar Conta Limite,Realizar o cadastro sem dados,,"Acesso ao Site, clicar em ""Faça seu Cadastro"", clicar em ""Criar Conta""",Mensagem de Erro,Acesso à página inicial,,Reprovado ❌
-CT 07,Criar Conta Limite,Realizar cadastro com o mínimo de dados,AA@email.com123456,"Acesso ao Site, clicar em ""Faça seu Cadastro"", inserir dados mínimos e clicar em ""Criar Conta""",Mensagem de Erro,Acesso à página inicial,,Reprovado ❌
-CT 08,Cadastro de Paciente Válido,Cadastrar um paciente com dados válidos,Teste 08teste08@teste.comTeste08!,"Na página inicial, entrar em Cadastrar Paciente, inserir os dados e clicar em ""Cadastrar Paciente""",Mensagem de Sucesso,"Cadastro Realizado, porém sem mensagem de sucesso",,Atenção ⚠️
-CT 09,Cadastro de Paciente Inválido,Cadastrar um paciente com dados inválidos,Teste 09teste09teste09,"Na página inicial, entrar em Cadastrar Paciente, inserir os dados e clicar em ""Cadastrar Paciente""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 10,Cadastro de Paciente Inválido,Cadastrar um paciente sem dados,,"Na página inicial, entrar em Cadastrar Paciente, clicar em ""Cadastrar Paciente""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 11,Cadastro de Paciente Limite,Cadastrar um paciente com o mínimo de dados,AB@email.comC1!,,Mensagem de Sucesso,"Cadastro Realizado, porém sem mensagem de sucesso",,Atenção ⚠️
-CT 12,Recuperação de Senha,Recuperar a senha de uma conta,enrico.araujo@sga.pucminas.br,"Na página de Login, clicar em ""Esqueceu sua senha?"", inserir o e-mail correspondente e clicar no botão laranja ""Enviar link de recuperação""",Mensagem de sucesso + recebimento de e-mail com o link de recuperação,"Mensagem de sucesso, porém ainda é necessário criar função de envio do link de recuperação",,Atenção ⚠️
-CT 13,Acesso aos Pontos de Interesse de um paciente,Visualizar os pontos de interesse de um paciente,,"Na página inicial, clica em Lista de Pacientes e clicar no símbolo em azul ao lado do nome de um dos pacientes",Lista de pontos de Interesse daquele paciente,Lista de pontos de Interesse daquele paciente,,Aprovado ✅
-CT 14,Cadastro de Ponto de Interesse Válido,Cadastrar um ponto de Interesse válido,Matemática,"Na Lista de Pontos de interesse de um paciente, clicar no botão azul ""Novo Ponto"", digitar o ponto de interesse e clicar em ""Salvar""",Mensagem de Sucesso,Aviso de Erro,,Atenção ⚠️
-CT 15,Cadastro de Ponto de Interesse Mínimo,Cadastrar um ponto de Interesse com dados mínimos,A,"Na Lista de Pontos de interesse de um paciente, clicar no botão azul ""Novo Ponto"", digitar o ponto de interesse e clicar em ""Salvar""",Mensagem de Sucesso,Aviso de Erro,,Atenção ⚠️
-CT 16,Cadastro de Ponto de Interesse Inválido,Cadastrar um ponto de Interesse vazio,,"Na Lista de Pontos de interesse de um paciente, clicar no botão azul ""Novo Ponto"", digitar o ponto de interesse e clicar em ""Salvar""",Mensagem de Erro,Mensagem de Erro,,Aprovado ✅
-CT 17,Exclusão de Ponto de Interesse,Excluir um ponto de interesse,,"Na Lista de Pontos de interesse de um paciente, clicar no lixo vermelho ao lado do ponto de interesse",Exclusão realizada em tempo real,Exclusão realizada em tempo real,,Aprovado ✅
-CT 18,Exclusão de Paciente,Excluir um paciente,,"Na página inicial, clica em Lista de Pacientes e clicar no símbolo de lixeira vermelho ao lado do nome de um dos pacientes",Exclusão realizada em tempo real,"Mensagem de Sucesso, porém o paciente continua aparecendo na lista",,Reprovado ❌
-CT 19,Visualizar Sessão,Acessar os dados de uma sessão e exportar os dados,,"Na página inicial, clicar na aba de ""Histórico de Sessões"" e então no botão ""Visualizar Sessão"" ao lado de algum dos cards. Na visualização, clicar no botão de ""Exportar dados da Sessão""","Apresentar os dados referentes à sessão, baixar arquivo com dados da sessão","Apresentar os dados referentes à sessão, mensagem de exportação, porém ainda é necessário implementar a função de exportação e integrar o dashboard",,Atenção ⚠️
+# Casos de Teste - Projeto X
+
+| ID | Teste | Objetivo | Entradas | Passos Executados | Resultado Esperado | Resultado Obtido | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :---: |
+| **CT 01** | Login Válido | Realizar Login com dados válidos | `claudio.batista@hotmail.com`<br>`Batata@1` | Acesso ao Site, inserção dos dados, clicar em "Entrar" | Login efetuado com sucesso | Página Inicial Acessada | ✅ |
+| **CT 02** | Login Inválido | Realizar Login com dados inválidos | `teste.invalido@teste.com`<br>`testeinv` | Acesso ao Site, inserção dos dados, clicar em "Entrar" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 03** | Login Inválido | Realizar Login vazio | *(Vazio)* | Acesso ao Site, clicar em "Entrar" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 04** | Criar Conta Válida | Realizar cadastro válido | `Enrico`<br>`enrico.araujo@sga.pucminas.br`<br>`teste04` | Clicar em "Faça seu Cadastro", inserir dados, "Criar Conta" | Acesso a página inicial | Página Inicial Acessada | ✅ |
+| **CT 05** | Criar Conta Inválida | Cadastro com dados duplicados | `Teste 04`<br>`teste04`<br>`teste 04` | Inserir dados já cadastrados, "Criar Conta" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 06** | Criar Conta Limite | Cadastro sem dados | *(Vazio)* | Clicar em "Faça seu Cadastro", clicar em "Criar Conta" | Mensagem de Erro | **Acesso à página inicial** | ❌ |
+| **CT 07** | Criar Conta Limite | Cadastro com dados mínimos | `A`<br>`A@email.com`<br>`123456` | Inserir dados mínimos, "Criar Conta" | Mensagem de Erro | **Acesso à página inicial** | ❌ |
+| **CT 08** | Cadastro Paciente Válido | Cadastrar paciente válido | `Teste 08`<br>`teste08@teste.com` | Inserir dados, "Cadastrar Paciente" | Mensagem de Sucesso | Cadastro Realizado (sem msg sucesso) | ⚠️ |
+| **CT 09** | Cadastro Paciente Inválido | Cadastrar paciente inválido | `Teste 09`<br>`teste09` | Inserir dados, "Cadastrar Paciente" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 10** | Cadastro Paciente Inválido | Cadastrar paciente vazio | *(Vazio)* | Clicar em "Cadastrar Paciente" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 11** | Cadastro Paciente Limite | Cadastrar paciente dados mínimos | `A`<br>`B@email.com` | Inserir dados, "Cadastrar Paciente" | Mensagem de Sucesso | Cadastro Realizado (sem msg sucesso) | ⚠️ |
+| **CT 12** | Recuperação de Senha | Recuperar senha | `enrico.araujo@sga.pucminas.br` | Clicar em "Esqueceu sua senha?", inserir e-mail | Msg sucesso + e-mail | Msg sucesso (falta envio de e-mail) | ⚠️ |
+| **CT 13** | Acesso Pontos Interesse | Visualizar interesses | *(N/A)* | Clicar no símbolo azul na lista de pacientes | Lista de pontos de Interesse | Lista de pontos de Interesse | ✅ |
+| **CT 14** | Cad. Ponto Interesse Válido | Cadastrar interesse válido | `Matemática` | Clicar "Novo Ponto", digitar, "Salvar" | Mensagem de Sucesso | **Aviso de Erro** | ⚠️ |
+| **CT 15** | Cad. Ponto Interesse Mínimo | Cadastrar interesse mínimo | `A` | Clicar "Novo Ponto", digitar, "Salvar" | Mensagem de Sucesso | **Aviso de Erro** | ⚠️ |
+| **CT 16** | Cad. Ponto Interesse Inválido | Cadastrar interesse vazio | *(Vazio)* | Clicar "Novo Ponto", digitar, "Salvar" | Mensagem de Erro | Mensagem de Erro | ✅ |
+| **CT 17** | Exclusão Ponto Interesse | Excluir interesse | *(N/A)* | Clicar no lixo vermelho ao lado do ponto | Exclusão em tempo real | Exclusão em tempo real | ✅ |
+| **CT 18** | Exclusão de Paciente | Excluir paciente | *(N/A)* | Clicar na lixeira vermelha ao lado do paciente | Exclusão em tempo real | **Paciente continua na lista** | ❌ |
+| **CT 19** | Visualizar Sessão | Exportar dados sessão | *(N/A)* | "Histórico de Sessões" > "Visualizar" > "Exportar" | Baixar arquivo | Msg exportação (falta implementar download) | ⚠️ |
+
+**Legenda:** ✅ Aprovado | ❌ Reprovado (Bug Crítico) | ⚠️ Atenção (Bug Menor/Melhoria)
